@@ -6,7 +6,7 @@ This repository contains project about postcrisis analysis. with multistep proce
 
 ### Prerequisites
 
-- [FFmpeg](https://ffmpeg.org/download.html) - Required for `heic_to_depth.py` to extract streams from HEIC files.
+- [FFmpeg](https://ffmpeg.org/download.html) - Required for `heic_to_depth.py` and the flask app to extract streams from HEIC files.
 
 ### Python Requirements
 
