@@ -8,9 +8,9 @@ The Shaqran project is focused on revolutionizing how post-crisis situations are
 
 The process involves multiple steps:
 1. **Data Collection:** Drones capture high-resolution HEIC or DNG images of the area.
-2. **Depth Map Extraction:** The depth information is extracted from these images using FFmpeg for HEIC files or ExifTool for DNG files.
-3. **3D Model Generation:** The extracted depth maps are processed in Python to create 3D models using the Trimesh library.
-4. **Analysis and Visualization:** The 3D models are used for detailed analysis, helping emergency teams make informed decisions.
+3. **Depth Map Extraction:** The depth information is extracted from these images using FFmpeg for HEIC files or ExifTool for DNG files.
+4. **3D Model Generation:** The extracted depth maps are processed in Python to create 3D models using the Trimesh library.
+5. **Analysis and Visualization:** The 3D models are used for detailed analysis, helping emergency teams make informed decisions.
 
 ## Installation
 
@@ -38,12 +38,17 @@ Install the required Python packages using pip:
 pip install -r requirements.txt
 ```
 ### Project Structure
-1-**heic_to_depth.py**: Script to extract depth maps from HEIC files.
 
-2-**flask_app/**: The main Flask application for handling file uploads, processing depth maps, and generating 3D models.
-3-**static/**: Contains CSS, JavaScript, and images for the Flask app.
-4-**templates/**: Contains the HTML templates for the Flask app.
-5-**requirements.txt**: Lists all the Python packages required to run the project.
+1.**heic_to_depth.py**: Script to extract depth maps from HEIC files.
+
+2.**flask_app/**: The main Flask application for handling file uploads, processing depth maps, and generating 3D models.
+
+3.**static/**: Contains CSS, JavaScript, and images for the Flask app.
+
+4.**templates/**: Contains the HTML templates for the Flask app.
+
+5.**requirements.txt**: Lists all the Python packages required to run the project.
+
 ### Python Code
 The main Python scripts for depth map extraction and 3D model generation are designed to be modular and efficient. Below is a high-level overview of the key functions:
 
@@ -56,7 +61,6 @@ These functions are integrated into the Flask app to provide an easy-to-use inte
 Below is an example of a depth map extracted from a drone-captured image:
 
 ![Image](example.png)
-
 ### Conclusion
 Shaqran is a powerful tool for post-crisis analysis, providing detailed 3D models that can aid in emergency response and recovery efforts. By leveraging the latest imaging technology and advanced Python libraries, this project offers a cutting-edge solution for analyzing and visualizing crisis-affected areas.
 
