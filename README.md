@@ -38,18 +38,19 @@ Install the required Python packages using pip:
 pip install -r requirements.txt
 ```
 ### Project Structure
-heic_to_depth.py: Script to extract depth maps from HEIC files.
-dng_to_depth.py: Script to extract depth maps from DNG files.
-flask_app/: The main Flask application for handling file uploads, processing depth maps, and generating 3D models.
-static/: Contains CSS, JavaScript, and images for the Flask app.
-templates/: Contains the HTML templates for the Flask app.
-requirements.txt: Lists all the Python packages required to run the project.
+1-**heic_to_depth.py**: Script to extract depth maps from HEIC files.
+
+2-**flask_app/**: The main Flask application for handling file uploads, processing depth maps, and generating 3D models.
+
+3-**static/**: Contains CSS, JavaScript, and images for the Flask app.
+4-**templates/**: Contains the HTML templates for the Flask app.
+5-**requirements.txt**: Lists all the Python packages required to run the project.
 ### Python Code
 The main Python scripts for depth map extraction and 3D model generation are designed to be modular and efficient. Below is a high-level overview of the key functions:
 
-extract_last_stream(heic_file, ffmpeg_executable, user_ip): Extracts the last stream (depth map) from a HEIC file using FFmpeg.
-extract_depth_map_from_dng(dng_file, user_ip): Extracts the depth map from a DNG file using ExifTool and converts it to PNG.
-process_depth_map(depth_map_path, user_ip): Processes the extracted depth map to generate a 3D model using Trimesh.
+1-extract_last_stream(heic_file, ffmpeg_executable, user_ip): Extracts the last stream (depth map) from a HEIC file using FFmpeg.
+2-extract_depth_map_from_dng(dng_file, user_ip): Extracts the depth map from a DNG file using ExifTool and converts it to PNG.
+3-process_depth_map(depth_map_path, user_ip): Processes the extracted depth map to generate a 3D model using Trimesh.
 These functions are integrated into the Flask app to provide an easy-to-use interface for generating 3D models from drone images.
 
 ### Example Image
