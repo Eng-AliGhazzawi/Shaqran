@@ -41,7 +41,6 @@ pip install -r requirements.txt
 1-**heic_to_depth.py**: Script to extract depth maps from HEIC files.
 
 2-**flask_app/**: The main Flask application for handling file uploads, processing depth maps, and generating 3D models.
-
 3-**static/**: Contains CSS, JavaScript, and images for the Flask app.
 4-**templates/**: Contains the HTML templates for the Flask app.
 5-**requirements.txt**: Lists all the Python packages required to run the project.
